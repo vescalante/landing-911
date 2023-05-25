@@ -598,13 +598,14 @@ section {
 --------------------------------------------------------------*/
 
 .formulario{
-  background: #232323;
+  background: #343434;
   position: absolute;
   width: 400px;
   min-height: 600px;
-  top: 180px;
+  top: 80px;
   right: 70px;
   padding: 30px;
+  z-index: 996;
 }
 
 .formulario .title-form {
@@ -630,10 +631,25 @@ section {
 .formulario .embed-form{
   width: 100%;
 }
+
+.formulario .embed-form .iframe-form{
+  height: 1600px;
+  width: 100%;
+}
+
+@media (min-width: 1747px) {
+  .formulario{
+    right: 120px;
+    width: 480px;
+  }
+}
 @media (max-width: 1225px) {
   .formulario{
     right: 0;
     width: 380px;
+  }
+  .formulario .embed-form .iframe-form{
+    height: 1700px;
   }
 }
 
@@ -646,6 +662,26 @@ section {
   }
   .formulario .title-form p{
     font-size: 17px;
+  }
+  .formulario .embed-form .iframe-form{
+    height: 1360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario .embed-form .iframe-form{
+    height: 1500px;
+  }
+}
+
+@media (max-width: 575px) {
+  .formulario .embed-form .iframe-form{
+    height: 1600px;
+  }
+}
+@media (max-width: 375px) {
+  .formulario .embed-form .iframe-form{
+    height: 1700px;
   }
 }
 
