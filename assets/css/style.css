@@ -824,7 +824,32 @@ section {
   border-radius: 0;
 }
 
+.video-box img {
+  min-height: 250px;
+}
+
+@media (min-width: 1747px) {
+  .video-box img{
+    min-height: 300px;
+  }
+}
+@media (max-width: 1400px) {
+  .video-box img{
+    min-height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
+  .video-box {
+    min-height: 300px;
+  }
+  .video-box img{
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 552px) {
   .video-box {
     min-height: 200px;
   }
@@ -834,7 +859,7 @@ section {
 # Alerta Section
 --------------------------------------------------------------*/
 .alerta {
-  background: url("../img/A-section-bg.jpg") fixed center center;
+  background: url("../img/a-section-bg.jpg") fixed center center;
   background-size: cover;
   margin: 20px 0px; 
   padding: 60px 0px;
@@ -1003,7 +1028,7 @@ section {
 # Busqueda Section
 --------------------------------------------------------------*/
 .busqueda {
-  background: url("../img/B-section-bg.jpg") fixed center center;
+  background: url("../img/b-section-bg.jpg") fixed center center;
   background-size: cover;
   margin: 20px 0px; 
   padding: 60px 0px;
@@ -1169,7 +1194,7 @@ section {
 # Coordinacion Section
 --------------------------------------------------------------*/
 .coordinacion {
-  background: url("../img/C-section-bg.jpg") fixed center center;
+  background: url("../img/c-section-bg.jpg") fixed center center;
   background-size: cover;
   margin: 20px 0px; 
   padding: 60px 0px;
